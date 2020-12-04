@@ -41,8 +41,8 @@ class User:
 token = "10b2e6b1a90a01875cfaa0d2dd307b7a73a15ceb1acf0c0f2a9e9c586f3b597815652e5c28ed8a1baf13c"
 version = "5.126"
 
-userid_1 = None  # 552934290 # 'count': 16
-userid_2 = "551843217"  # 171691064
+userid_1 = None 
+userid_2 = "551843217" 
 
 user_1 = User(userid_1, token, version)
 user_2 = User(userid_2, token, version)
