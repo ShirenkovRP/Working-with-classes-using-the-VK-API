@@ -28,7 +28,7 @@ class User:
         self.mutaluserlist = []
         for i in self.friends["response"]["items"]:
             if i in otheruser.friends["response"]["items"]:
-                self.mutaluserlist.append(User(i, self.token, self.token))
+                self.mutaluserlist.append(User(i, self.token, self.version))
         return self.mutaluserlist
         
     def __str__(self):
@@ -54,7 +54,7 @@ user_2 = User(userid_2, token, version)
 mutaluserlist = user_1 & user_2
 print(mutaluserlist)
 
-
 # Задача №3
 # Вывод print(user) должен выводить ссылку на профиль пользователя в сети VK
-print(user_1)  
+
+print(mutaluserlist[1])  
